@@ -13,7 +13,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  builder_state: ^0.0.1
 
 dev_dependencies:
   flutter_test:
