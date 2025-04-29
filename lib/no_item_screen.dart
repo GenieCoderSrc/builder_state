@@ -15,5 +15,3 @@ class NoItemScreen extends StatelessWidget {
   }
 }
 
-Widget buildNoItem({String title = 'No Item'}) =>
-    Center(child: Text(title, style: AppTxtStyles.kMidTitleTextStyle));

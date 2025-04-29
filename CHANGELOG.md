@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.2
+### Initial Release
+- Added no_item_builder.dart file.
+
+
 ## 0.0.1
 ### Initial Release
 - Added `FutureLoader` widget for managing async data states (loading, success, error, and no data).

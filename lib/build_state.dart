@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'loading_screen.dart';
-import 'no_item_screen.dart';
+import 'no_item_builder.dart';
 
 Widget defaultOnWaiting({String? waitingTxt}) =>
     LoadingScreen(waitingTxt: waitingTxt);
@@ -24,5 +24,5 @@ Widget _buildError(BuildContext context, Object? error, String? errorTitle) {
     errorMsg = 'Internet Connection Failed';
   }
 
-  return buildNoItem(title: errorMsg);
+  return NoItemBuilder(title: errorMsg);
 }

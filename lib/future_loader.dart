@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'build_state.dart';
+import 'no_item_builder.dart';
 import 'no_item_screen.dart';
 
 
@@ -44,7 +45,7 @@ class FutureLoader<T> extends StatelessWidget {
               !snapshot.hasData) {
             return (onSuccessNoData != null)
                 ? onSuccessNoData!(context, snapshot)
-                : buildNoItem(title: noDataTitle ?? 'No Item');
+                : NoItemBuilder(title: noDataTitle ?? 'No Item');
           } else {
             return (onWaiting != null)
                 ? onWaiting!(context, snapshot)
