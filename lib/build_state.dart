@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:state_msg_builder/state_msg_builder.dart';
 
 import 'loading_screen.dart';
-import 'no_item_builder.dart';
 
 Widget defaultOnWaiting({String? waitingTxt}) =>
     LoadingScreen(waitingTxt: waitingTxt);

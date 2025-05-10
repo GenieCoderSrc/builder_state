@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.3
+### Initial Release
+- Removed State Message Builder to reduce package size.
+
 ## 0.0.2
 ### Initial Release
 - Added no_item_builder.dart file.

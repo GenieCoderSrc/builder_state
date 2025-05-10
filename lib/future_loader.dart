@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:state_msg_builder/state_msg_builder.dart';
 
 import 'build_state.dart';
-import 'no_item_builder.dart';
-import 'no_item_screen.dart';
 
 
 class FutureLoader<T> extends StatelessWidget {
