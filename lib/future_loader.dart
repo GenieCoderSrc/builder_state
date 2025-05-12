@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:state_msg_builder/state_msg_builder.dart';
 
-import 'build_state.dart';
-
 
 class FutureLoader<T> extends StatelessWidget {
   final Future<T>? future;
@@ -34,8 +32,8 @@ class FutureLoader<T> extends StatelessWidget {
             debugPrint('FutureLoader | snapshot.error" ${snapshot.error}');
             return (onError != null)
                 ? onError!(context, snapshot)
-                : defaultOnError(context, snapshot.error,
-                    errorTitle: errorTitle);
+                : ErrorMsgBuilder( error: snapshot.error,
+                    title: errorTitle);
           }
           if (snapshot.hasData) {
             // print('FutureBuilder |onSuccessHasData : ${snapshot.data}');
@@ -44,11 +42,11 @@ class FutureLoader<T> extends StatelessWidget {
               !snapshot.hasData) {
             return (onSuccessNoData != null)
                 ? onSuccessNoData!(context, snapshot)
-                : NoItemBuilder(title: noDataTitle ?? 'No Item');
+                : StateMessageBuilder(title: noDataTitle ?? 'No Item');
           } else {
             return (onWaiting != null)
                 ? onWaiting!(context, snapshot)
-                : defaultOnWaiting(waitingTxt: waitingTxt);
+                : LoadingScreen(waitingTxt: waitingTxt);
           }
         });
   }
