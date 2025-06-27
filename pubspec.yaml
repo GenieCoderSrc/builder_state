@@ -1,6 +1,6 @@
 name: builder_state
 description: "A simple and customizable Flutter package to easily handle different states (loading, success, error, no data) when working with asynchronous operations like FutureBuilder. Includes ready-to-use widgets for loading screens, error displays, and empty state views. Ideal for building clean and responsive UIs with minimal boilerplate."
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/GenieCoderSrc/builder_state
 repository: https://github.com/GenieCoderSrc/builder_state
 issue_tracker: https://github.com/GenieCoderSrc/builder_state/issues
@@ -16,6 +16,7 @@ dependencies:
 
   app_style: ^0.0.1
   state_msg_builder: ^0.0.2
+  flutter_bloc: ^9.1.1
 
 dev_dependencies:
   flutter_test:
