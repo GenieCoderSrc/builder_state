@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.6
+### July 15, 2025
+### Removed
+- Removed app_style dependency.
+
 ## 0.0.5
 ### Added
 * Introduced `SelectionBuilder<T, S>` widget to simplify Bloc-based conditional rendering:
