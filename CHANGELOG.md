@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.7
+### Aug 3, 2025
+### Added
+- Added `WidgetInitializer` reusable widget that handle `onInit` with the given `args`
+
 ## 0.0.6
 ### July 15, 2025
 ### Removed
