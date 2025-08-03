@@ -14,6 +14,9 @@ dependencies:
   flutter:
     sdk: flutter
 
+  state_msg_builder:
+    path: ../state_msg_builder
+
   flutter_bloc: ^9.1.1
 
 dev_dependencies:
