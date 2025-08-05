@@ -1,6 +1,0 @@
-# melos_managed_dependency_overrides: app_style,state_msg_builder
-dependency_overrides:
-  state_msg_builder:
-    path: ../state_msg_builder
-  app_style:
-    path: ../app_style
