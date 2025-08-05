@@ -2,3 +2,5 @@
 dependency_overrides:
   state_msg_builder:
     path: ../state_msg_builder
+  app_style:
+    path: ../app_style

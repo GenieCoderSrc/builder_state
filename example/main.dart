@@ -29,11 +29,10 @@ class MyHomePage extends StatelessWidget {
       body: Center(
         child: FutureLoader<String>(
           future: fetchData(),
-          onWaiting:
-              (context, snapshot) =>
-                  LoadingScreen(waitingTxt: 'Fetching data...'),
-          onSuccessHasData:
-              (context, snapshot) => Text('Data: ${snapshot.data}'),
+          onWaiting: (context, snapshot) =>
+              LoadingScreen(waitingTxt: 'Fetching data...'),
+          onSuccessHasData: (context, snapshot) =>
+              Text('Data: ${snapshot.data}'),
           onError: (context, snapshot) => Text('Error: ${snapshot.error}'),
           onSuccessNoData: (context, snapshot) => const StateMsgScreen(),
         ),
