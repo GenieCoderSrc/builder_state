@@ -15,7 +15,7 @@ Add the following to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  builder_state: latest
+  builder_state: <latest_version>
 ```
 
 Then run:
