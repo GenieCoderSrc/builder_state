@@ -14,6 +14,8 @@
 Add the following to your `pubspec.yaml`:
 
 ```yaml
+resolution: workspace
+
 dependencies:
   builder_state: <latest_version>
 ```
